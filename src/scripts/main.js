@@ -25,5 +25,7 @@ document.querySelector('.tree').addEventListener('click', (e) => {
 
   const nestedList = e.target.nextElementSibling;
 
-  nestedList.hidden = !nestedList.hidden;
+  if (nestedList) {
+    nestedList.hidden = !nestedList.hidden;
+  }
 });
